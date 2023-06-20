@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (5.7.1)
+  - Kingfisher (6.3.1)
+  - Player (0.13.3)
+  - SwiftyJSON (5.0.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.7.1)
+  - Kingfisher (~> 6.3.1)
+  - Player (~> 0.13.3)
+  - SwiftyJSON (~> 5.0.1)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Kingfisher
+    - Player
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
+  Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
+  Player: e1889a481f14b3bc4065b62bed304c3de3b47dfe
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+
+PODFILE CHECKSUM: 6dd4547700497aa9c5b7c3009d12a9c2e7d867d0
+
+COCOAPODS: 1.12.1
