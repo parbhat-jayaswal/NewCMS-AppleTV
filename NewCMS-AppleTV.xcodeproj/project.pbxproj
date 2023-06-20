@@ -17,6 +17,8 @@
 		7F17D4592A41CA0100D97C0E /* NewCMS_AppleTVUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F17D4582A41CA0100D97C0E /* NewCMS_AppleTVUITestsLaunchTests.swift */; };
 		7F17D4682A41CA1900D97C0E /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F17D4672A41CA1900D97C0E /* SplashVC.swift */; };
 		7F17D46D2A41CA3500D97C0E /* FilmFliksSplash.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7F17D46C2A41CA3500D97C0E /* FilmFliksSplash.mp4 */; };
+		7F17D4712A41CBBB00D97C0E /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F17D4702A41CBBB00D97C0E /* HomeVC.swift */; };
+		7F17D4752A41CD1800D97C0E /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F17D4742A41CD1800D97C0E /* AppConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		7F17D4582A41CA0100D97C0E /* NewCMS_AppleTVUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCMS_AppleTVUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7F17D4672A41CA1900D97C0E /* SplashVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
 		7F17D46C2A41CA3500D97C0E /* FilmFliksSplash.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FilmFliksSplash.mp4; sourceTree = "<group>"; };
+		7F17D4702A41CBBB00D97C0E /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		7F17D4742A41CD1800D97C0E /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +105,13 @@
 		7F17D4332A41CA0000D97C0E /* NewCMS-AppleTV */ = {
 			isa = PBXGroup;
 			children = (
-				7F17D4342A41CA0000D97C0E /* AppDelegate.swift */,
+				7F17D4762A41CD4100D97C0E /* AppDelegate */,
 				7F17D4652A41CA1900D97C0E /* Controllers */,
-				7F17D46B2A41CA2800D97C0E /* Configuration */,
-				7F17D4692A41CA2800D97C0E /* Helper */,
 				7F17D46A2A41CA2800D97C0E /* Models */,
+				7F17D4692A41CA2800D97C0E /* UI_Helper */,
+				7F17D46B2A41CA2800D97C0E /* Configuration */,
+				7F17D4722A41CCA700D97C0E /* GlobalMethods */,
+				7F17D4732A41CCCA00D97C0E /* Constant */,
 				7F17D46E2A41CA3A00D97C0E /* Resources */,
 				7F17D4382A41CA0000D97C0E /* Main.storyboard */,
 				7F17D4402A41CA0100D97C0E /* LaunchScreen.storyboard */,
@@ -136,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				7F17D4662A41CA1900D97C0E /* Splash screen */,
+				7F17D46F2A41CB9000D97C0E /* HomeVC */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -148,11 +155,11 @@
 			path = "Splash screen";
 			sourceTree = "<group>";
 		};
-		7F17D4692A41CA2800D97C0E /* Helper */ = {
+		7F17D4692A41CA2800D97C0E /* UI_Helper */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Helper;
+			path = UI_Helper;
 			sourceTree = "<group>";
 		};
 		7F17D46A2A41CA2800D97C0E /* Models */ = {
@@ -165,6 +172,7 @@
 		7F17D46B2A41CA2800D97C0E /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
+				7F17D4742A41CD1800D97C0E /* AppConfiguration.swift */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -176,6 +184,36 @@
 				7F17D46C2A41CA3500D97C0E /* FilmFliksSplash.mp4 */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		7F17D46F2A41CB9000D97C0E /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				7F17D4702A41CBBB00D97C0E /* HomeVC.swift */,
+			);
+			path = HomeVC;
+			sourceTree = "<group>";
+		};
+		7F17D4722A41CCA700D97C0E /* GlobalMethods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GlobalMethods;
+			sourceTree = "<group>";
+		};
+		7F17D4732A41CCCA00D97C0E /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		7F17D4762A41CD4100D97C0E /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				7F17D4342A41CA0000D97C0E /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,6 +349,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F17D43D2A41CA0000D97C0E /* NewCMS_AppleTV.xcdatamodeld in Sources */,
+				7F17D4752A41CD1800D97C0E /* AppConfiguration.swift in Sources */,
+				7F17D4712A41CBBB00D97C0E /* HomeVC.swift in Sources */,
 				7F17D4682A41CA1900D97C0E /* SplashVC.swift in Sources */,
 				7F17D4352A41CA0000D97C0E /* AppDelegate.swift in Sources */,
 			);

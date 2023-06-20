@@ -31,11 +31,10 @@ class SplashVC: UIViewController {
     }
 
     @objc func didfinishplaying() {
-
-        print("OKOK")
-        
+        let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "HomeVC") as! HomeVC
+        navigationController?.pushViewController(vc, animated: true)
     }
-
 
     /*
     // MARK: - Navigation
